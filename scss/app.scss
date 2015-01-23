@@ -1,15 +1,73 @@
 @import "settings";
 @import "foundation";
 
+.logo {
+  height: 41px;
+}
+
+.name {
+  span {
+    position: absolute;
+    left: -9999px;
+  }
+}
+
 .hero {
   background: url('../images/hero.jpg') center center no-repeat;
   background-size: cover;
-  padding: 20% 0;
+  padding: 15% 0;
 
   h1 {
     color: $white;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
+  }
+}
+
+.section {
+  margin: 100px 0;
+
+  h2 {
+    color: $primary-color;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p {
+    // font-size: 20px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+
+.button {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: $font-weight-bold;
+  -webkit-font-smoothing: antialiased;
+  transition: all .3s;
+  opacity: .7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.secondary {
+    background: transparent;
+    border-color: $ronin-grey;
+    color: $ronin-grey;
+
+    &:hover {
+      background: transparent;
+      color: $ronin-grey;
+    }
+  }
+
+  &.reverse {
+    color: $white;
+    border-color: $white;
   }
 }
 

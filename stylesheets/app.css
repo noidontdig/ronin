@@ -9098,29 +9098,29 @@ th.hide-for-touch {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 76, ../scss/_custom.scss */
+/* line 75, ../scss/_custom.scss */
 .section {
   margin: 50px 0;
 }
-/* line 79, ../scss/_custom.scss */
+/* line 78, ../scss/_custom.scss */
 .section h2 {
   color: #F7931E;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
-/* line 85, ../scss/_custom.scss */
+/* line 84, ../scss/_custom.scss */
 .section p {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
 
 @media (min-width: 40.063em) {
-  /* line 92, ../scss/_custom.scss */
+  /* line 91, ../scss/_custom.scss */
   .section p {
     font-size: 20px;
   }
 }
-/* line 100, ../scss/_custom.scss */
+/* line 99, ../scss/_custom.scss */
 .button {
   text-transform: uppercase;
   font-size: 12px;
@@ -9129,64 +9129,64 @@ th.hide-for-touch {
   transition: all .3s;
   opacity: .7;
 }
-/* line 108, ../scss/_custom.scss */
+/* line 107, ../scss/_custom.scss */
 .button:hover {
   opacity: 1;
 }
-/* line 112, ../scss/_custom.scss */
+/* line 111, ../scss/_custom.scss */
 .button.secondary {
   background: transparent;
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-/* line 117, ../scss/_custom.scss */
+/* line 116, ../scss/_custom.scss */
 .button.secondary:hover {
   background: transparent;
   color: #4d4d4d;
 }
-/* line 123, ../scss/_custom.scss */
+/* line 122, ../scss/_custom.scss */
 .button.reverse {
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
-/* line 132, ../scss/_custom.scss */
+/* line 131, ../scss/_custom.scss */
 .ad {
   background-color: #eee;
   margin: 20px 10px;
   padding: 20px;
 }
-/* line 137, ../scss/_custom.scss */
+/* line 136, ../scss/_custom.scss */
 .ad img {
   height: 150px;
   margin: 25px 0;
 }
 
 @media (min-width: 40.063em) {
-  /* line 144, ../scss/_custom.scss */
+  /* line 143, ../scss/_custom.scss */
   .ad {
     margin: 0 10px;
   }
 }
-/* line 152, ../scss/_custom.scss */
+/* line 151, ../scss/_custom.scss */
 .flex-video {
   margin: 40px 0;
 }
 
-/* line 159, ../scss/_custom.scss */
+/* line 158, ../scss/_custom.scss */
 .footer {
   padding: 20px;
 }
-/* line 162, ../scss/_custom.scss */
+/* line 161, ../scss/_custom.scss */
 .footer ul {
   list-style-type: none;
   margin: 0;
 }
-/* line 167, ../scss/_custom.scss */
+/* line 166, ../scss/_custom.scss */
 .footer li {
   margin: 10px 0;
 }
-/* line 171, ../scss/_custom.scss */
+/* line 170, ../scss/_custom.scss */
 .footer a {
   font-size: 14px;
   font-weight: bold;
@@ -9195,11 +9195,11 @@ th.hide-for-touch {
 }
 
 @media (min-width: 64.063em) {
-  /* line 180, ../scss/_custom.scss */
+  /* line 179, ../scss/_custom.scss */
   .footer {
     padding: 50px 20px;
   }
-  /* line 183, ../scss/_custom.scss */
+  /* line 182, ../scss/_custom.scss */
   .footer li {
     display: inline-block;
     margin: 0 20px;

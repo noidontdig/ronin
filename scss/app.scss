@@ -34,13 +34,16 @@
   }
 
   p {
-    // font-size: 20px;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
   }
 }
 
-
+@media (min-width: 40.063em) {
+  .section p {
+    font-size: 20px;
+  }
+}
 
 .button {
   text-transform: uppercase;
@@ -68,6 +71,16 @@
   &.reverse {
     color: $white;
     border-color: $white;
+  }
+}
+
+.ad {
+  background-color: #eee;
+  padding: 20px;
+
+  img {
+    height: 150px;
+    margin: 25px 0;
   }
 }
 

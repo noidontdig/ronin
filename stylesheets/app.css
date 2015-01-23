@@ -7556,14 +7556,14 @@ a img {
 p {
   font-family: inherit;
   font-weight: normal;
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility;
 }
 /* line 242, ../bower_components/foundation/scss/foundation/components/_type.scss */
 p.lead {
-  font-size: 1.61875rem;
+  font-size: 1.21875rem;
   line-height: 1.6;
 }
 /* line 244, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7678,7 +7678,7 @@ code {
 ul,
 ol,
 dl {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   list-style-position: outside;
@@ -9082,7 +9082,13 @@ th.hide-for-touch {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 45, ../scss/app.scss */
+@media (min-width: 40.063em) {
+  /* line 43, ../scss/app.scss */
+  .section p {
+    font-size: 20px;
+  }
+}
+/* line 48, ../scss/app.scss */
 .button {
   text-transform: uppercase;
   font-size: 12px;
@@ -9091,23 +9097,34 @@ th.hide-for-touch {
   transition: all .3s;
   opacity: .7;
 }
-/* line 53, ../scss/app.scss */
+/* line 56, ../scss/app.scss */
 .button:hover {
   opacity: 1;
 }
-/* line 57, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
 .button.secondary {
   background: transparent;
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-/* line 62, ../scss/app.scss */
+/* line 65, ../scss/app.scss */
 .button.secondary:hover {
   background: transparent;
   color: #4d4d4d;
 }
-/* line 68, ../scss/app.scss */
+/* line 71, ../scss/app.scss */
 .button.reverse {
   color: #FFFFFF;
   border-color: #FFFFFF;
+}
+
+/* line 77, ../scss/app.scss */
+.ad {
+  background-color: #eee;
+  padding: 20px;
+}
+/* line 81, ../scss/app.scss */
+.ad img {
+  height: 150px;
+  margin: 25px 0;
 }

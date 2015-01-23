@@ -9121,10 +9121,34 @@ th.hide-for-touch {
 /* line 77, ../scss/app.scss */
 .ad {
   background-color: #eee;
+  margin: 20px 10px;
   padding: 20px;
 }
-/* line 81, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 .ad img {
   height: 150px;
   margin: 25px 0;
+}
+
+@media (min-width: 40.063em) {
+  /* line 89, ../scss/app.scss */
+  .ad {
+    margin: 0 10px;
+  }
+}
+/* line 94, ../scss/app.scss */
+.footer {
+  background-color: #666;
+  color: #FFFFFF;
+  padding: 50px 0;
+}
+/* line 99, ../scss/app.scss */
+.footer ul {
+  margin-bottom: 0;
+}
+/* line 103, ../scss/app.scss */
+.footer a {
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }

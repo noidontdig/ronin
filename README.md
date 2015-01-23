@@ -1,5 +1,7 @@
 # Ronin Labs v0.1
 
+Check it out at [http://alexq.in/ronin](alexq.in/ronin)
+
 ###Files of interest:
 
 * index.html

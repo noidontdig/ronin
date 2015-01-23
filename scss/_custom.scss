@@ -1,7 +1,6 @@
 //
 // Custom styles for Ronin Labs
-//
-
+// ----------------------------
 //
 // # Top bar
 //
@@ -25,8 +24,33 @@
     transition: all .2s;
   }
 
-  .top-bar-section .has-dropdown > a:after {
-    border-color: $ronin-light-grey rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  .top-bar-section {
+    .has-dropdown > a:after {
+      border-color: $ronin-light-grey rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    }
+
+    .dropdown li.parent-link {
+      display: none !important;
+    }
+
+    li.back h5 a {
+      color: #ccc;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+}
+//for large screens
+@media (min-width: 64.063em) {
+  .top-bar-section {
+    .dropdown {
+      box-shadow: 0 0.1em 0.25em 0.1em rgba(0,0,0,0.15);
+      top: 70px;
+
+      li:not(.has-form) a:not(.button) {
+        line-height: 3rem;
+      }
+    }
   }
 }
 
@@ -50,7 +74,7 @@
 // # Landing page section
 //
 .section {
-  margin: 100px 0;
+  margin: 50px 0;
 
   h2 {
     color: $primary-color;
@@ -63,13 +87,12 @@
     -webkit-font-smoothing: antialiased;
   }
 }
-
+// for medium + large screens
 @media (min-width: 40.063em) {
   .section p {
     font-size: 20px;
   }
 }
-
 
 //
 // # Custom buttons
@@ -134,17 +157,32 @@
 // # Footer
 //
 .footer {
-  background-color: $ronin-light-grey;
-  color: $white;
-  padding: 50px 20px;
+  padding: 20px;
 
   ul {
-    margin-bottom: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  li {
+    margin: 10px 0;
   }
 
   a {
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
+  }
+}
+// for large screens
+@media (min-width: 64.063em) {
+  .footer {
+    padding: 50px 20px;
+
+    li {
+      display: inline-block;
+      margin: 0 20px;
+    }
   }
 }

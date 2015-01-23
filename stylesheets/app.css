@@ -6979,7 +6979,7 @@ meta.foundation-mq-topbar {
 }
 /* line 415, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a {
-  font-weight: normal;
+  font-weight: bold;
   padding: 8px 1.66667rem;
 }
 /* line 418, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -9042,20 +9042,20 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 9, ../scss/_custom.scss */
+/* line 8, ../scss/_custom.scss */
 .top-bar .logo {
   height: 41px;
 }
-/* line 14, ../scss/_custom.scss */
+/* line 13, ../scss/_custom.scss */
 .top-bar .name span {
   position: absolute;
   left: -9999px;
 }
-/* line 20, ../scss/_custom.scss */
+/* line 19, ../scss/_custom.scss */
 .top-bar .active > a span {
   border-bottom: 3px solid #F7931E;
 }
-/* line 24, ../scss/_custom.scss */
+/* line 23, ../scss/_custom.scss */
 .top-bar a {
   transition: all .2s;
 }
@@ -9063,43 +9063,64 @@ th.hide-for-touch {
 .top-bar .top-bar-section .has-dropdown > a:after {
   border-color: #666 transparent transparent;
 }
-
+/* line 32, ../scss/_custom.scss */
+.top-bar .top-bar-section .dropdown li.parent-link {
+  display: none !important;
+}
 /* line 36, ../scss/_custom.scss */
+.top-bar .top-bar-section li.back h5 a {
+  color: #ccc;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 64.063em) {
+  /* line 46, ../scss/_custom.scss */
+  .top-bar-section .dropdown {
+    box-shadow: 0 0.1em 0.25em 0.1em rgba(0, 0, 0, 0.15);
+    top: 70px;
+  }
+  /* line 50, ../scss/_custom.scss */
+  .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+    line-height: 3rem;
+  }
+}
+/* line 60, ../scss/_custom.scss */
 .hero {
   background: url("../images/hero.jpg") center center no-repeat;
   background-size: cover;
   padding: 15% 0;
 }
-/* line 41, ../scss/_custom.scss */
+/* line 65, ../scss/_custom.scss */
 .hero h1 {
   color: #FFFFFF;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 52, ../scss/_custom.scss */
+/* line 76, ../scss/_custom.scss */
 .section {
-  margin: 100px 0;
+  margin: 50px 0;
 }
-/* line 55, ../scss/_custom.scss */
+/* line 79, ../scss/_custom.scss */
 .section h2 {
   color: #F7931E;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
-/* line 61, ../scss/_custom.scss */
+/* line 85, ../scss/_custom.scss */
 .section p {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
 
 @media (min-width: 40.063em) {
-  /* line 68, ../scss/_custom.scss */
+  /* line 92, ../scss/_custom.scss */
   .section p {
     font-size: 20px;
   }
 }
-/* line 77, ../scss/_custom.scss */
+/* line 100, ../scss/_custom.scss */
 .button {
   text-transform: uppercase;
   font-size: 12px;
@@ -9108,63 +9129,79 @@ th.hide-for-touch {
   transition: all .3s;
   opacity: .7;
 }
-/* line 85, ../scss/_custom.scss */
+/* line 108, ../scss/_custom.scss */
 .button:hover {
   opacity: 1;
 }
-/* line 89, ../scss/_custom.scss */
+/* line 112, ../scss/_custom.scss */
 .button.secondary {
   background: transparent;
   border-color: #4d4d4d;
   color: #4d4d4d;
 }
-/* line 94, ../scss/_custom.scss */
+/* line 117, ../scss/_custom.scss */
 .button.secondary:hover {
   background: transparent;
   color: #4d4d4d;
 }
-/* line 100, ../scss/_custom.scss */
+/* line 123, ../scss/_custom.scss */
 .button.reverse {
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
-/* line 109, ../scss/_custom.scss */
+/* line 132, ../scss/_custom.scss */
 .ad {
   background-color: #eee;
   margin: 20px 10px;
   padding: 20px;
 }
-/* line 114, ../scss/_custom.scss */
+/* line 137, ../scss/_custom.scss */
 .ad img {
   height: 150px;
   margin: 25px 0;
 }
 
 @media (min-width: 40.063em) {
-  /* line 121, ../scss/_custom.scss */
+  /* line 144, ../scss/_custom.scss */
   .ad {
     margin: 0 10px;
   }
 }
-/* line 129, ../scss/_custom.scss */
+/* line 152, ../scss/_custom.scss */
 .flex-video {
   margin: 40px 0;
 }
 
-/* line 136, ../scss/_custom.scss */
+/* line 159, ../scss/_custom.scss */
 .footer {
-  background-color: #666;
-  color: #FFFFFF;
-  padding: 50px 20px;
+  padding: 20px;
 }
-/* line 141, ../scss/_custom.scss */
+/* line 162, ../scss/_custom.scss */
 .footer ul {
-  margin-bottom: 0;
+  list-style-type: none;
+  margin: 0;
 }
-/* line 145, ../scss/_custom.scss */
+/* line 167, ../scss/_custom.scss */
+.footer li {
+  margin: 10px 0;
+}
+/* line 171, ../scss/_custom.scss */
 .footer a {
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 64.063em) {
+  /* line 180, ../scss/_custom.scss */
+  .footer {
+    padding: 50px 20px;
+  }
+  /* line 183, ../scss/_custom.scss */
+  .footer li {
+    display: inline-block;
+    margin: 0 20px;
+  }
 }

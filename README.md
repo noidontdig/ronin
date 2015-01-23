@@ -1,6 +1,6 @@
 # Ronin Labs v0.1
 
-Check it out at [http://alexq.in/ronin](alexq.in/ronin)
+Check it out at [alexq.in/ronin](http://alexq.in/ronin)
 
 ###Files of interest:
 

@@ -116,9 +116,10 @@ $jumbo       : #888888;
 // $black       : #000000;
 $ronin-grey : #4d4d4d;
 $ronin-light-grey : #666;
+$ronin-orange : #F7931E;
 
 // We use these as default colors throughout
-$primary-color: #F7931E;
+$primary-color: $ronin-orange;
 $secondary-color: $ronin-grey;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;

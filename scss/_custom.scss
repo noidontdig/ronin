@@ -8,7 +8,7 @@
   .logo {
     height: 41px;
   }
-
+  // keep text name but hide it for accessible technologies
   .name {
     span {
       position: absolute;
@@ -17,7 +17,7 @@
   }
 
   .active > a span {
-    border-bottom: 3px solid $primary-color;
+    border-bottom: 3px solid $ronin-orange;
   }
 
   a {
@@ -75,15 +75,13 @@
 .section {
   margin: 50px 0;
 
-  h2 {
-    color: $primary-color;
+  h2, p {
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
   }
 
-  p {
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
+  h2 {
+    color: $ronin-orange;
   }
 }
 // for medium + large screens

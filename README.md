@@ -1,29 +1,30 @@
-# Foundation Compass Template
+# Ronin Labs v0.1
 
-The easiest way to get started with Foundation + Compass.
+###Files of interest:
 
-## Requirements
+* index.html
+* scss/_settings.scss
+* scss/_custom.scss
+* scss/app.scss
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+###_settings.scss (overwritten Foundation styles)
 
-## Quickstart
+**c) Global**
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+* Changed body font to `Helvetica, Arial, sans-serif`
+* Allow bold font use
+* Add custom colors: `$ronin-grey`, `$ronin-light-grey`, `$ronin-orange`
+* Set primary + secondary colors to `$ronin-orange` + `$ronin-grey`
 
-```bash
-bundle exec compass watch
-```
+**d) Media queries**
 
-## Upgrading
+* Uncomment out large media query stuff for later use
 
-If you'd like to upgrade to a newer version of Foundation down the road just run:
+**05. Buttons**
 
-```bash
-bower update
-```
+* Change button defaults to use new colors + style
+
+**34. Top Bar**
+
+* Change top bar defaults to use new colors + style
+* Move breakpoint so that medium screens get the mobile version of top bar

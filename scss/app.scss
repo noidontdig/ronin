@@ -1,6 +1,18 @@
 @import "settings";
 @import "foundation";
 
+.hero {
+  background: url('../images/hero.jpg') center center no-repeat;
+  background-size: cover;
+  padding: 20% 0;
+
+  h1 {
+    color: $white;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",

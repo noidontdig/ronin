@@ -1,14 +1,28 @@
 @import "settings";
 @import "foundation";
 
-.logo {
-  height: 41px;
-}
+.top-bar {
+  .logo {
+    height: 41px;
+  }
 
-.name {
-  span {
-    position: absolute;
-    left: -9999px;
+  .name {
+    span {
+      position: absolute;
+      left: -9999px;
+    }
+  }
+
+  .active > a span {
+    border-bottom: 3px solid $primary-color;
+  }
+
+  a {
+    transition: all .2s;
+  }
+
+  .top-bar-section .has-dropdown > a:after {
+    border-color: $ronin-light-grey rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   }
 }
 
@@ -105,6 +119,10 @@
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
   }
+}
+
+.flex-video {
+  margin: 40px 0;
 }
 
 // Or selectively include components
